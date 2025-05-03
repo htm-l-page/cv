@@ -1,0 +1,608 @@
+
+       	.clear{
+	     clear: both;
+        }
+       .purple{
+	    color: #000000;
+        }
+        .block{
+	    margin: 25px 30px;
+		}
+	    .block h1{
+		margin-left: -10px;
+		font-weight:200px
+	    }
+        .last.block{
+	    margin-bottom: 110px;
+        }
+        .horizontal_list{
+	    margin: 0;
+	    padding: 0;
+	    list-style-type: none;
+        }
+	    .horizontal_list li{
+		float: left;
+	    }
+	    .horizontal_list li:before{
+		content: none;
+	    }
+	    .horizontal_list li{ 
+		padding-left: 0; 
+		text-indent: 0;
+	    }
+       .horizontal_line{
+	    margin: 34px 0 0 35px;
+	    height: 30px;
+	    position: relative;	
+        }
+	    .line_left,
+	    .line_right{
+		border-top: 4px solid #000000;
+		width: 305px;
+		margin-top: 13px;
+	    }
+	    .line_left{
+		float: left;
+	    }
+	    .line_right{
+		float: right;
+        }
+	    .central_circle, 
+	    .right_circle{
+		background: #eef103;
+		position: absolute;
+		border-radius: 50px;
+		box-shadow: inset 0 0 0 4px rgb(0, 0, 0);
+		animation: spin 5s linear infinite;
+	    }
+		@keyframes spin {
+			from {
+				transform: rotate(360deg); /* Start rotation */
+			}
+			to {
+				transform: rotate(0deg); /* End rotation */
+			}
+		}
+	    .central_circle{
+		width: 30px;
+		height: 30px;
+		top: 0px;
+		left: 322px;
+		animation:heartbeat 10s ease-in-out infinite, moveAndFade 10s ease-in-out infinite;
+	    }
+		@keyframes moveAndFade {
+			0% {
+				transform: translateX(0);
+				opacity: 1;
+			}
+			50% {
+				transform: translateX(350px); /* Move to the right by 100px */
+				opacity: 0.5; /* Fade to 50% opacity */
+			}
+			100% {
+				transform: translateX(0);
+				opacity: 1; /* Return to full opacity */
+			}
+		}
+		@keyframes heartbeat {
+			0%, 100% {
+				transform: scale(1);
+			}
+			20% {
+				transform: scale(2.3); /* Grow to 130% */
+			}
+			40% {
+				transform: scale(1);
+			}
+		}
+
+        body{
+        background-size: cover; 
+		background-color: #69696ede;
+	    margin: 0;
+        }
+        h1,h2{
+	    font-family: 'Lato', Helvetica, sans-serif;
+	    font-weight: 295;
+	    color: #fcff37e1
+        }
+	    h1{
+		font-size: 28px;
+		font-weight: 300;
+		margin: 20px 0;
+	    }
+	    h2{
+		font-size: 32px;
+		margin: 32px 0 24px;
+	    }
+        blockquote {
+	    font-style: italic;
+	    margin: 1px 0;
+	    padding-left: 25px;
+        }
+        blockquote, p , a, li{
+	    font-family: 'Lato', Helvetica, sans-serif;
+	    font-weight: 300;
+	    font-size: 15px;
+		}
+		ul:hover{
+		background:rgb(255, 255, 255,0.6);
+		}
+		p:hover{
+		background:rgb(255, 255, 255,0.6)
+		}
+		a:hover{
+	    background:rgb(99, 96, 96);
+		}
+	    img:hover{
+		background:rgb(0, 0, 0);
+		}
+        a:focus{ 
+        outline: none;
+        }
+
+        ul{
+        list-style: none;
+        padding:0;
+        margin:0;
+        }
+	    li { 
+		padding-left: 1em; 
+		text-indent: -.7em;
+	    }
+	    li:before {
+			content: "•";
+			color: hsla(0, 0%, 0%, 0.986);
+			font-size: 20px;
+			padding-right: 8px;
+		
+	    }
+        li.l1 {
+        border: solid;
+        border-width: 4px;
+		border-radius: 20px;
+        background-color: hsla(0, 0%, 0%, 0.986);
+        margin: 10px 80px 10px 0px;
+		}
+        li.l2 {
+        border: solid;
+        border-width: 4px;
+		border-radius: 20px;
+        background-color: hsla(0, 0%, 0%, 0.986);
+        margin: 10px 100px 10px 0px;
+        }
+        li.l3{
+        border: solid;
+        border-width: 4px;
+		border-radius: 20px;
+        background-color:hsla(0, 0%, 0%, 0.986);
+        margin: 10px 150px 10px 0px;
+        }
+        li.l4 {
+        border: solid;
+        border-width: 4px;
+        background-color:hsla(0, 0%, 0%, 0.986);
+		border-radius: 20px;
+        margin: 10px 75px 10px 0px;
+        }
+         /* Laatikkojenkoko */
+        #main_container {
+	    width: 1100px;
+	    margin: 0 auto;
+        }
+	    #header {
+		height: 130px;
+		border-bottom: 4px solid #000000;
+	    }
+		.header_logotype_container {
+			width: 260px;
+			height: 130px;
+			border-right: 4px solid #000000;
+			float: left;
+		} 
+	    
+		.header_menu_container {
+			height: 130px;
+			width: 699px;
+			float: left;	
+		}
+		.header_menu_container a {
+		font-family: 'Lato', Helvetica, sans-serif;
+		}
+	    #left_col {
+		width: 260px;
+		float: left;
+	    }
+	    #content_container {
+		width: 699px;
+		border-left: 4px solid #000000;
+		float: left;
+	    }
+	    #footer {
+		width: 960px;
+		height: 60px;
+		border-top: 4px solid #000000;
+		display: inline-block;
+	    }
+    .logotype_name{
+	text-transform: uppercase;
+	font-size: 32px;
+	margin: 43px 0 0;
+    }
+    .logotype_occupation{
+	text-transform: uppercase;
+	margin-top: 5px;
+	color: #fcff37e5;
+	font-size: 14px;
+	letter-spacing: 2px;
+	padding-left: 7px;
+    }
+	*/navi bar*/
+    .header_menu{
+	width: 1000x;
+	margin-top: 30px;
+	margin-left: 10px;
+     }
+	.header_menu a{
+	 text-decoration: none;
+	 padding: 0 19px;
+     border-left: 4px solid #000000;
+	 font-size: 16px;
+	 font-weight: 400;
+	}
+	.header_menu a.no_border{
+	 border-left: none;
+	}
+	.header_menu a:hover {
+	 color: #0c0c09ef;
+	}	
+    #left_nav h2 {
+	margin: 0;
+	font-size: 24px;
+    }
+	.profile_picture{
+		width:230px;
+		height:250px;
+		margin:5px;
+        margin-top:40px;
+		background:url("omakuva.png")100% /230px no-repeat;
+        border-width: 2px;
+		border-radius: 20px;
+		box-shadow: inset 0 0 0 4px black;
+	}
+    .tietoja_content,
+    .tietoja_details_content {
+	margin-top: 25px;
+    }
+    .tietoja_content{
+	width: 230px;
+    }
+    .tietoja_details_content h2 + p.purple{
+	margin-top: 10px;
+    }
+    .contact_details_content p{
+	margin: 0;
+    }
+    .contact_details_content p.purple{
+	margin-top: 25px;
+    }
+    .send_message_button,
+    .special_button {
+	margin-top: 25px;
+	display: block;
+	background: hwb(59 22% 0%);
+	width: 230px;
+	height: 50px;
+	position: relative;
+	z-index: 1;
+	border-radius: 25px;
+	box-shadow: inset 0 0 0 4px black;
+    }
+	.cut1:after {
+		content: "";
+		position: absolute;
+		bottom: -19px;
+		left: -20px;
+		width: 30px;
+		height: 30px;
+		z-index: 9;
+		background:repeat;
+        transform: rotate(45deg);
+	}
+	.cut2:before {
+	    content: "";
+	    position: absolute;
+	    top: -19px;
+	    right: -20px;
+	    width: 30px;
+	    height: 30px;
+	    z-index: 9;
+	    background:repeat;
+        transform: rotate(45deg);
+	}
+	.content {
+	    text-align: center;		
+	    color: #000000;
+	    width: 100%;
+	    height: 40px;
+	    position: absolute;
+	    z-index: 2;
+	    font: 18px 'Lato', Arial, sans-serif;
+	    margin: 0;
+	    padding: 16px 0 0;
+        top: -7px;
+        bottom: 10px;
+	    border-top: 4px solid #000000;
+	    border-bottom: 4px solid #000000;
+	}
+    .send_message_button:hover,
+	.special_button:hover {
+		background: #ffffff;
+	}
+	 .get_social_content{
+	margin-top: 15px;
+    }
+    .get_social_content h2{
+    margin-bottom: 8px;
+    }
+	.social_icons {
+		margin-left: -8px;
+	}
+	.social_icons a {
+		font-size: 35px;
+		text-decoration: none;
+		color: #ffffff;
+		padding: 0;
+		padding: 0 5px;
+	}
+	
+	@keyframes bounce {
+		0%, 100% {
+			transform: translateY(0); /* Start and end at the original position */
+		}
+		50% {
+			transform: translateY(-10px); /* Move up by 10px at 50% */
+		}
+	}
+	
+	/* Keyframes for pulse animation */
+	@keyframes pulse {
+		0%, 100% {
+			transform: scale(1); /* Start and end at original size */
+			border-color: #333; /* Original border color */
+		}
+		50% {
+			transform: scale(1.05); /* Slightly enlarge at 50% */
+			border-color: #555; /* Darker border color at 50% */
+		}
+	}	
+    .animated-text {
+     display: inline-block;
+     animation: fadeIn 5s ease-in-out infinite alternate;
+     }
+     @keyframes fadeIn {
+         0% {
+        opacity: 0;
+        transform: translateY(-20px);
+        }
+        100% {
+        opacity: 1;
+        transform: translateY(0);
+        }
+	}
+    .spinning-text {
+	 display: inline-block;
+	 animation: spin 5s linear infinite;
+	 }	
+	 @keyframes spin {
+		0% {
+		transform: rotate(0deg);
+		}
+		100% {
+		transform: rotate(360deg);
+		}
+	}  
+	.spinning-text-x {
+		display: inline-block;
+		animation: spinX 3s linear infinite;
+	}
+	
+	@keyframes spinX {
+		0% {
+			transform: rotateX(0deg);
+		}
+		100% {
+			transform: rotateX(360deg);
+		} 
+	}
+	
+	.rotating-text {
+		display: inline-block;
+		animation: rotateLeft 5s linear infinite;
+	}
+	
+	@keyframes rotateLeft {
+		0% {
+			transform: rotateY(0deg);
+		}
+		100% {
+			transform: rotateY(-360deg);
+		}
+	}
+
+	
+	 /* Flashing number styles */
+     .flashing-number {
+    font-size: 1em; /* Set font size */
+    color: #efff14; /* Set font color */
+    display: flex;
+    }
+    @keyframes flash {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    }
+    /* Applying the flash animation to each span */
+    .flashing-number span {
+    animation: flash 15s infinite;
+    display: inline-block;
+    }
+
+    .flashing-number span:nth-child(1) { animation-delay: 0s; }
+    .flashing-number span:nth-child(2) { animation-delay: 1s; }
+    .flashing-number span:nth-child(3) { animation-delay: 2s; }
+    .flashing-number span:nth-child(4) { animation-delay: 3s; }
+    .flashing-number span:nth-child(5) { animation-delay: 4s; }
+
+       /* Flashing image styles */
+    .flashing-image {
+		width: 230px;
+		height: 50px;
+		border-radius: 25px; /* Round the corners */
+		box-shadow: inset 0 0 0 10px black;
+		object-fit: fill; /* Ensure the image covers the dimensions */
+		transition: all 0.3s ease; /* Smooth tranthe container */
+    }
+	.flashing-image:hover {
+		opacity: 0.8; /* Slightly fade the image on hover */
+	}
+	
+	.specific-link {
+		display: inline-block; /* Ensure the link wraps around the image */
+		text-decoration: none;
+	}
+
+    @keyframes flash {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    }
+
+      p {
+	  font-family: "Lucida Console", "Courier New", monospace;
+     }
+       li {
+	font-family: "Lucida Console", "Courier New", monospace;
+    }
+  .rounded-iframe {
+	width: 230px; /* Width of the iframe */
+	height: 230px; /* Height of the iframe */
+	border-radius: 15px; /* Round the corners of the iframe */
+	border: none;
+	box-shadow: inset 0 0 0 4px #000000;
+}
+.other-link {
+    font-family: 'Arial', sans-serif; /* Set the font family */
+    font-size: 15px; /* Set the font size */
+    font-weight: bold; /* Set the font weight */
+    color: #fbff28; /* Set the font color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Add underline on hover for all <a> elements */
+.other-link:hover {
+    text-decoration: underline;
+}
+.no-hover:hover {
+    color: inherit; /* Revert to original color */
+    background-color: inherit; /* Revert to original background color */
+    text-decoration: none; /* Remove any text decoration */
+    /* Add any other properties you want to reset */
+}
+.rounded-hover {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px; /* Round corners of the list container */
+    overflow: hidden; /* Ensure rounded corners are respected */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.naytto {
+	background-color: #919da9ce;
+	color: #1a202c;
+	padding: 8px;
+	margin-bottom: 18px;
+	margin-top:40px;
+	border-radius: 8px;
+	font-size: 30px;
+	text-align: center;
+	border: 2px solid #35393e;
+	box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.498);
+	word-wrap: break-word;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Roboto Mono';
+	font-weight: 700;
+	letter-spacing: -0.05em;
+    transition: all 0.3s ease;
+	width: 82%;
+}
+.feedback-form {
+	width: 200px;
+	margin: 0px;
+}
+.form-container {
+    background: #919da9ce;
+    max-width: 300px;
+    margin: 0;
+	margin-top:40px;
+    padding: 10px;
+    border-radius: 12px;
+	border: 2px solid #35393e;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.498);
+	width: 82%;
+}
+
+ textarea {
+    width: 95%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+	font-size: 1.1em;
+	font-family: 'Roboto', sans-serif;
+	resize: none; 
+ }
+ input {
+	width: 95%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+	font-size: 1.1em;
+	height:25px;
+	
+
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#viestiLaatikko {
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 8px;
+    background: #e0ffe0;
+    border: 1px solid #66cc66
+}
+.hidden {
+    display: none;
+}
+ 
